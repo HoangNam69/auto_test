@@ -1,0 +1,26 @@
+# --- Maven ---
+target/
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# --- Eclipse ---
+.settings/
+.project
+.classpath
+.factorypath
+
+# --- IntelliJ IDEA (nếu có dùng chung) ---
+.idea/
+*.iml
+*.iws
+out/
+
+# --- OS rác ---
+.DS_Store
+Thumbs.db
+
+# --- Log files ---
+*.log
