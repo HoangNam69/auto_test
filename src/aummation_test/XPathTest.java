@@ -1,5 +1,7 @@
 package aummation_test;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,19 +10,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class XPathTest {
 	public static void main(String[] args) {
 		WebDriver driver = new ChromeDriver();
-
+		// Chờ tối đa 20 giây cho mọi phần tử trước khi báo lỗi
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		
 		driver.manage().window().maximize();
-
 		driver.get("https://google.com");
 
 		WebElement searchBox = driver.findElement(By.name("q"));
 
 		searchBox.sendKeys("Scented Candles LULL");
 		searchBox.submit();
-		try {
-			Thread.sleep(10000);
-		} catch (Exception e) {
-		}
 
 		// 1. Khai báo XPath cho tiêu đề kết quả đầu tiên
 		// Lưu ý: XPath này có thể thay đổi tùy theo cấu trúc Google tại thời điểm chạy
