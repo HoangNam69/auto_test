@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-23T23:31:23 ICT" name="Default Suite" finished-at="2026-03-23T23:31:45 ICT" duration-ms="21881">
+    <groups>
+    </groups>
+    <test started-at="2026-03-23T23:31:23 ICT" name="automation_test" finished-at="2026-03-23T23:31:45 ICT" duration-ms="21881">
+      <class name="test_ng.SliderTestNG">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test_ng.SliderTestNG@78dd667e]" started-at="2026-03-23T23:31:23 ICT" name="setUp" finished-at="2026-03-23T23:31:25 ICT" duration-ms="1816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSliderHandle()[pri:0, instance:test_ng.SliderTestNG@78dd667e]" started-at="2026-03-23T23:31:25 ICT" name="testSliderHandle" finished-at="2026-03-23T23:31:45 ICT" duration-ms="19810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSliderHandle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_ng.SliderTestNG@78dd667e]" started-at="2026-03-23T23:31:45 ICT" name="tearDown" finished-at="2026-03-23T23:31:45 ICT" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test_ng.SliderTestNG -->
+    </test> <!-- automation_test -->
+  </suite> <!-- Default Suite -->
+</testng-results>

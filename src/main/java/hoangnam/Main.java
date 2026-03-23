@@ -1,4 +1,4 @@
-package aummation_test;
+package hoangnam;
 
 public class Main {
 	public static void main(String[] args) {

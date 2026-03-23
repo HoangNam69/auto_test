@@ -1,0 +1,61 @@
+package test_ng;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class SliderTestNG {
+	WebDriver driver;
+	WebDriverWait wait;
+	Actions actions;
+
+	@BeforeMethod
+	public void setUp() {
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+		actions = new Actions(driver);
+
+		driver.get("https://www.google.com");
+	}
+
+	@Test
+	public void testSliderHandle() {
+		WebElement searchField = driver.findElement(By.name("q"));
+		searchField.sendKeys("JQuery UI Slider");
+		searchField.submit();
+
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//h3[contains(text(),'Slider')]"))).click();
+
+		driver.switchTo().frame(driver.findElement(By.className("demo-frame")));
+
+		WebElement sliderHandle = driver.findElement(By.xpath("//div[@id='slider']/span"));
+		actions.dragAndDropBy(sliderHandle, 200, 0).perform();
+
+//		Verification
+		String styleAttribute = sliderHandle.getAttribute("style");
+		System.out.println("Style attribute: " + styleAttribute);
+
+		Assert.assertTrue(styleAttribute.contains("left"), "Slider should have moved!");
+	}
+
+	@AfterMethod
+	public void tearDown() {
+		if (driver != null) {
+			driver.quit();
+		}
+	}
+}
