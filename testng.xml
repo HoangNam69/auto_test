@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Automation_Testing_Suite">
+
+    <test name="UI_Interactions_Test">
+        <classes>
+            <class name="test_ng.SliderTestNG"/>
+            <class name="test_ng.HoverTestNG"/>
+            <class name="test_ng.LoginTestNG"/>
+        </classes>
+    </test>
+
+</suite>
