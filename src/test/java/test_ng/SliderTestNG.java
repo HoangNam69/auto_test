@@ -13,27 +13,15 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import test_ng.base.BaseTest;
 
-public class SliderTestNG {
-	WebDriver driver;
-	WebDriverWait wait;
-	Actions actions;
-
-	@BeforeMethod
-	public void setUp() {
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
-		wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-
-		actions = new Actions(driver);
-
-		driver.get("https://www.google.com");
-	}
+public class SliderTestNG extends BaseTest {
 
 	@Test
 	public void testSliderHandle() {
+
+		driver.get("https://www.google.com");
+
 		WebElement searchField = driver.findElement(By.name("q"));
 		searchField.sendKeys("JQuery UI Slider");
 		searchField.submit();
@@ -52,10 +40,4 @@ public class SliderTestNG {
 		Assert.assertTrue(styleAttribute.contains("left"), "Slider should have moved!");
 	}
 
-	@AfterMethod
-	public void tearDown() {
-		if (driver != null) {
-			driver.quit();
-		}
-	}
 }
