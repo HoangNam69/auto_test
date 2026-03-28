@@ -7,8 +7,11 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import test_ng.base.BaseTest;
 import test_ng.helpers.ExcelHelper;
+import test_ng.pages.LoginPage;
 
 public class LoginTestNG extends BaseTest {
+
+    private LoginPage loginPage;
 
     @DataProvider(name = "LoginData")
     public Object[][] getLoginData() {
@@ -21,11 +24,8 @@ public class LoginTestNG extends BaseTest {
     @Test(dataProvider = "LoginData", description = "Kiểm tra tính năng đăng nhập với nhiều trạng thái tài khoản")
     public void testLogin(String username, String password, boolean isSuccessExpected, String expectedError) {
         driver.get("https://www.saucedemo.com/");
-
-        driver.findElement(By.id("user-name")).sendKeys(username);
-        driver.findElement(By.id("password")).sendKeys(password);
-
-        driver.findElement(By.id("login-button")).click();
+        loginPage = new LoginPage(driver);
+        loginPage.login(username, password);
 
         if (isSuccessExpected) {
 //            Case 01: mong đợi thành công
@@ -33,7 +33,7 @@ public class LoginTestNG extends BaseTest {
             Assert.assertTrue(currentUrl.contains("inventory.html"), "Lỗi: Không thể đăng nhập với tài khoản " + username);
         } else {
 //            Case 02 + 03: Mong đợi không thành công và in ra lỗi
-            String actualError = driver.findElement(By.cssSelector("h3[data-test='error']")).getText();
+            String actualError = loginPage.getErrorMessage();
 
             Assert.assertEquals(actualError, expectedError, "Lỗi: Thông báo sai lệch cho tài khoản " + username);
         }

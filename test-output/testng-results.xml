@@ -2,30 +2,30 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-28T22:53:34 ICT" name="Automation_Testing_Suite" finished-at="2026-03-28T22:53:47 ICT" duration-ms="13206">
+  <suite started-at="2026-03-29T00:09:42 ICT" name="Automation_Testing_Suite" finished-at="2026-03-29T00:09:53 ICT" duration-ms="10496">
     <groups>
     </groups>
-    <test started-at="2026-03-28T22:53:34 ICT" name="UI_Interactions_Test" finished-at="2026-03-28T22:53:47 ICT" duration-ms="13206">
+    <test started-at="2026-03-29T00:09:42 ICT" name="UI_Interactions_Test" finished-at="2026-03-29T00:09:53 ICT" duration-ms="10496">
       <class name="test_ng.HoverTestNG">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test_ng.HoverTestNG@37918c79]" started-at="2026-03-28T22:53:34 ICT" name="setUp" finished-at="2026-03-28T22:53:35 ICT" duration-ms="1229" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test_ng.HoverTestNG@3901d134]" started-at="2026-03-29T00:09:42 ICT" name="setUp" finished-at="2026-03-29T00:09:43 ICT" duration-ms="1063" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testHoverAction()[pri:1, instance:test_ng.HoverTestNG@37918c79]" started-at="2026-03-28T22:53:35 ICT" name="testHoverAction" description="Kiểm tra thao tác di chuột (Hover) để hiển thị Tooltip" finished-at="2026-03-28T22:53:39 ICT" duration-ms="3220" status="PASS">
+        <test-method signature="testHoverAction()[pri:1, instance:test_ng.HoverTestNG@3901d134]" started-at="2026-03-29T00:09:43 ICT" name="testHoverAction" description="Kiểm tra thao tác di chuột (Hover) để hiển thị Tooltip" finished-at="2026-03-29T00:09:46 ICT" duration-ms="3204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHoverAction -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_ng.HoverTestNG@37918c79]" started-at="2026-03-28T22:53:39 ICT" name="tearDown" finished-at="2026-03-28T22:53:39 ICT" duration-ms="155" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_ng.HoverTestNG@3901d134]" started-at="2026-03-29T00:09:46 ICT" name="tearDown" finished-at="2026-03-29T00:09:46 ICT" duration-ms="140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- test_ng.HoverTestNG -->
       <class name="test_ng.LoginTestNG">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test_ng.LoginTestNG@1677d1]" started-at="2026-03-28T22:53:39 ICT" name="setUp" finished-at="2026-03-28T22:53:40 ICT" duration-ms="701" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test_ng.LoginTestNG@670002]" started-at="2026-03-29T00:09:47 ICT" name="setUp" finished-at="2026-03-29T00:09:48 ICT" duration-ms="685" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String,boolean,java.lang.String)[pri:0, instance:test_ng.LoginTestNG@1677d1]" started-at="2026-03-28T22:53:40 ICT" name="testLogin" description="Kiểm tra tính năng đăng nhập với nhiều trạng thái tài khoản" data-provider="LoginData" finished-at="2026-03-28T22:53:41 ICT" duration-ms="1519" status="PASS">
+        <test-method signature="testLogin(java.lang.String,java.lang.String,boolean,java.lang.String)[pri:0, instance:test_ng.LoginTestNG@670002]" started-at="2026-03-29T00:09:48 ICT" name="testLogin" description="Kiểm tra tính năng đăng nhập với nhiều trạng thái tài khoản" data-provider="LoginData" finished-at="2026-03-29T00:09:49 ICT" duration-ms="1073" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,15 +51,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_ng.LoginTestNG@1677d1]" started-at="2026-03-28T22:53:41 ICT" name="tearDown" finished-at="2026-03-28T22:53:41 ICT" duration-ms="122" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_ng.LoginTestNG@670002]" started-at="2026-03-29T00:09:49 ICT" name="tearDown" finished-at="2026-03-29T00:09:49 ICT" duration-ms="152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test_ng.LoginTestNG@1677d1]" started-at="2026-03-28T22:53:41 ICT" name="setUp" finished-at="2026-03-28T22:53:42 ICT" duration-ms="674" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test_ng.LoginTestNG@670002]" started-at="2026-03-29T00:09:49 ICT" name="setUp" finished-at="2026-03-29T00:09:49 ICT" duration-ms="679" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String,boolean,java.lang.String)[pri:0, instance:test_ng.LoginTestNG@1677d1]" started-at="2026-03-28T22:53:42 ICT" name="testLogin" description="Kiểm tra tính năng đăng nhập với nhiều trạng thái tài khoản" data-provider="LoginData" finished-at="2026-03-28T22:53:44 ICT" duration-ms="1444" status="PASS">
+        <test-method signature="testLogin(java.lang.String,java.lang.String,boolean,java.lang.String)[pri:0, instance:test_ng.LoginTestNG@670002]" started-at="2026-03-29T00:09:49 ICT" name="testLogin" description="Kiểm tra tính năng đăng nhập với nhiều trạng thái tài khoản" data-provider="LoginData" finished-at="2026-03-29T00:09:50 ICT" duration-ms="766" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,15 +85,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_ng.LoginTestNG@1677d1]" started-at="2026-03-28T22:53:44 ICT" name="tearDown" finished-at="2026-03-28T22:53:44 ICT" duration-ms="125" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_ng.LoginTestNG@670002]" started-at="2026-03-29T00:09:50 ICT" name="tearDown" finished-at="2026-03-29T00:09:50 ICT" duration-ms="140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test_ng.LoginTestNG@1677d1]" started-at="2026-03-28T22:53:44 ICT" name="setUp" finished-at="2026-03-28T22:53:44 ICT" duration-ms="648" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test_ng.LoginTestNG@670002]" started-at="2026-03-29T00:09:50 ICT" name="setUp" finished-at="2026-03-29T00:09:51 ICT" duration-ms="693" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String,boolean,java.lang.String)[pri:0, instance:test_ng.LoginTestNG@1677d1]" started-at="2026-03-28T22:53:44 ICT" name="testLogin" description="Kiểm tra tính năng đăng nhập với nhiều trạng thái tài khoản" data-provider="LoginData" finished-at="2026-03-28T22:53:47 ICT" duration-ms="2784" status="PASS">
+        <test-method signature="testLogin(java.lang.String,java.lang.String,boolean,java.lang.String)[pri:0, instance:test_ng.LoginTestNG@670002]" started-at="2026-03-29T00:09:51 ICT" name="testLogin" description="Kiểm tra tính năng đăng nhập với nhiều trạng thái tài khoản" data-provider="LoginData" finished-at="2026-03-29T00:09:52 ICT" duration-ms="1265" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -119,7 +119,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_ng.LoginTestNG@1677d1]" started-at="2026-03-28T22:53:47 ICT" name="tearDown" finished-at="2026-03-28T22:53:47 ICT" duration-ms="114" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_ng.LoginTestNG@670002]" started-at="2026-03-29T00:09:52 ICT" name="tearDown" finished-at="2026-03-29T00:09:53 ICT" duration-ms="140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
