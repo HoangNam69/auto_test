@@ -2,12 +2,7 @@ package test_ng.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import test_ng.base.BasePage;
-
-import java.time.Duration;
 
 public class LoginPage extends BasePage {
 
@@ -20,26 +15,20 @@ public class LoginPage extends BasePage {
         super(driver); // Super được call để đẩy driver lên cho BasePage khởi tạo
     }
 
-
     public void enterUsername(String username) {
-        WebElement userEle = wait.until(ExpectedConditions.visibilityOfElementLocated(usernameInput));
-        userEle.clear();
-        userEle.sendKeys(username);
+       setText(usernameInput, username);
     }
 
     public void enterPassword(String password) {
-        WebElement passEle = wait.until(ExpectedConditions.visibilityOfElementLocated(passwordInput));
-        passEle.clear();
-        passEle.sendKeys(password);
+        setText(passwordInput,password);
     }
 
     public void clickLoginBtn() {
-        WebElement btnLoginEle = wait.until(ExpectedConditions.elementToBeClickable(loginBtn));
-        btnLoginEle.click();
+       clickElement(loginBtn);
     }
 
     public String getErrorMessage() {
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(errorMessage)).getText();
+        return getTextElement(errorMessage);
     }
 
     public void login(String username, String password) {
