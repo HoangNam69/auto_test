@@ -6,17 +6,15 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import test_ng.base.BaseTest;
+import test_ng.helpers.ExcelHelper;
 
 public class LoginTestNG extends BaseTest {
 
     @DataProvider(name = "LoginData")
     public Object[][] getLoginData() {
-        return new Object[][]{
-//                col 1: username, col 2: password, col 3: Expected result  - Pass(true) || Fail (false), col 4: Thông báo lỗi mong đợi
-                {"standard_user", "secret_sauce", true, ""},
-                {"locked_out_user", "secret_sauce", false, "Epic sadface: Sorry, this user has been locked out."},
-                {"nam_test", "wrong_password", false, "Epic sadface: Username and password do not match any user in this service"}
-        };
+        String excelFilePath = "src/test/resources/LoginData.xlsx";
+        String sheetName = "Sheet1";
+        return ExcelHelper.readExcel(excelFilePath, sheetName);
     }
 
     //    Method test hứng 4 data cols tương ứng với 4 tham số của method

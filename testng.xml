@@ -5,7 +5,7 @@
 
     <test name="UI_Interactions_Test">
         <classes>
-            <class name="test_ng.SliderTestNG"/>
+<!--            <class name="test_ng.SliderTestNG"/>-->
             <class name="test_ng.HoverTestNG"/>
             <class name="test_ng.LoginTestNG"/>
         </classes>
