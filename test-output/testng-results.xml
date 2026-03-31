@@ -1,54 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-29T00:25:37 ICT" name="Automation_Testing_Suite" finished-at="2026-03-29T00:26:05 ICT" duration-ms="27868">
+  <suite started-at="2026-03-31T22:55:58 ICT" name="Automation_Testing_Suite" finished-at="2026-03-31T22:56:29 ICT" duration-ms="31445">
     <groups>
     </groups>
-    <test started-at="2026-03-29T00:25:37 ICT" name="UI_Interactions_Test" finished-at="2026-03-29T00:26:05 ICT" duration-ms="27868">
-      <class name="test_ng.SliderTestNG">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test_ng.SliderTestNG@11a9e7c8]" started-at="2026-03-29T00:25:37 ICT" name="setUp" finished-at="2026-03-29T00:25:38 ICT" duration-ms="1116" status="PASS">
+    <test started-at="2026-03-31T22:55:58 ICT" name="UI_Interactions_Test" finished-at="2026-03-31T22:56:29 ICT" duration-ms="31445">
+      <class name="test_ng.tests.OrangeHRMTestNG">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test_ng.tests.OrangeHRMTestNG@3b07a0d6]" started-at="2026-03-31T22:55:58 ICT" name="setUp" finished-at="2026-03-31T22:56:01 ICT" duration-ms="2347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSliderHandle()[pri:0, instance:test_ng.SliderTestNG@11a9e7c8]" started-at="2026-03-29T00:25:38 ICT" name="testSliderHandle" finished-at="2026-03-29T00:25:55 ICT" duration-ms="17143" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSliderHandle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_ng.SliderTestNG@11a9e7c8]" started-at="2026-03-29T00:25:55 ICT" name="tearDown" finished-at="2026-03-29T00:25:56 ICT" duration-ms="194" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- test_ng.SliderTestNG -->
-      <class name="test_ng.HoverTestNG">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test_ng.HoverTestNG@778d1062]" started-at="2026-03-29T00:25:56 ICT" name="setUp" finished-at="2026-03-29T00:25:56 ICT" duration-ms="682" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testHoverAction()[pri:1, instance:test_ng.HoverTestNG@778d1062]" started-at="2026-03-29T00:25:56 ICT" name="testHoverAction" description="Kiểm tra thao tác di chuột (Hover) để hiển thị Tooltip" finished-at="2026-03-29T00:25:59 ICT" duration-ms="3191" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testHoverAction -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_ng.HoverTestNG@778d1062]" started-at="2026-03-29T00:25:59 ICT" name="tearDown" finished-at="2026-03-29T00:26:00 ICT" duration-ms="143" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- test_ng.HoverTestNG -->
-      <class name="test_ng.LoginTestNG">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test_ng.LoginTestNG@670002]" started-at="2026-03-29T00:26:00 ICT" name="setUp" finished-at="2026-03-29T00:26:01 ICT" duration-ms="665" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String,boolean,java.lang.String)[pri:0, instance:test_ng.LoginTestNG@670002]" started-at="2026-03-29T00:26:01 ICT" name="testLogin" description="Kiểm tra tính năng đăng nhập với nhiều trạng thái tài khoản" data-provider="LoginData" finished-at="2026-03-29T00:26:02 ICT" duration-ms="795" status="PASS">
+        <test-method signature="testOrangeLogin(java.lang.String,java.lang.String,boolean,java.lang.String)[pri:0, instance:test_ng.tests.OrangeHRMTestNG@3b07a0d6]" started-at="2026-03-31T22:56:01 ICT" name="testOrangeLogin" description="Kiểm tra Đăng nhập OrangeHRM với Data-Drive" data-provider="OrangeLoginData" finished-at="2026-03-31T22:56:12 ICT" duration-ms="11896" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[standard_user]]>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Invalid credentials]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrangeLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_ng.tests.OrangeHRMTestNG@3b07a0d6]" started-at="2026-03-31T22:56:12 ICT" name="tearDown" finished-at="2026-03-31T22:56:13 ICT" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test_ng.tests.OrangeHRMTestNG@3b07a0d6]" started-at="2026-03-31T22:56:13 ICT" name="setUp" finished-at="2026-03-31T22:56:13 ICT" duration-ms="689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testOrangeLogin(java.lang.String,java.lang.String,boolean,java.lang.String)[pri:0, instance:test_ng.tests.OrangeHRMTestNG@3b07a0d6]" started-at="2026-03-31T22:56:13 ICT" name="testOrangeLogin" description="Kiểm tra Đăng nhập OrangeHRM với Data-Drive" data-provider="OrangeLoginData" finished-at="2026-03-31T22:56:21 ICT" duration-ms="7394" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NamTest]]>
               </value>
             </param>
             <param index="1">
               <value>
                 <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Invalid credentials]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrangeLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_ng.tests.OrangeHRMTestNG@3b07a0d6]" started-at="2026-03-31T22:56:21 ICT" name="tearDown" finished-at="2026-03-31T22:56:21 ICT" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test_ng.tests.OrangeHRMTestNG@3b07a0d6]" started-at="2026-03-31T22:56:21 ICT" name="setUp" finished-at="2026-03-31T22:56:22 ICT" duration-ms="680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testOrangeLogin(java.lang.String,java.lang.String,boolean,java.lang.String)[pri:0, instance:test_ng.tests.OrangeHRMTestNG@3b07a0d6]" started-at="2026-03-31T22:56:22 ICT" name="testOrangeLogin" description="Kiểm tra Đăng nhập OrangeHRM với Data-Drive" data-provider="OrangeLoginData" finished-at="2026-03-31T22:56:29 ICT" duration-ms="7429" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
               </value>
             </param>
             <param index="2">
@@ -64,80 +104,12 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_ng.LoginTestNG@670002]" started-at="2026-03-29T00:26:02 ICT" name="tearDown" finished-at="2026-03-29T00:26:02 ICT" duration-ms="133" status="PASS">
+        </test-method> <!-- testOrangeLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_ng.tests.OrangeHRMTestNG@3b07a0d6]" started-at="2026-03-31T22:56:29 ICT" name="tearDown" finished-at="2026-03-31T22:56:29 ICT" duration-ms="128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test_ng.LoginTestNG@670002]" started-at="2026-03-29T00:26:02 ICT" name="setUp" finished-at="2026-03-29T00:26:02 ICT" duration-ms="662" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String,boolean,java.lang.String)[pri:0, instance:test_ng.LoginTestNG@670002]" started-at="2026-03-29T00:26:02 ICT" name="testLogin" description="Kiểm tra tính năng đăng nhập với nhiều trạng thái tài khoản" data-provider="LoginData" finished-at="2026-03-29T00:26:03 ICT" duration-ms="851" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[locked_out_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Epic sadface: Sorry, this user has been locked out.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_ng.LoginTestNG@670002]" started-at="2026-03-29T00:26:03 ICT" name="tearDown" finished-at="2026-03-29T00:26:03 ICT" duration-ms="143" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test_ng.LoginTestNG@670002]" started-at="2026-03-29T00:26:03 ICT" name="setUp" finished-at="2026-03-29T00:26:04 ICT" duration-ms="660" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String,boolean,java.lang.String)[pri:0, instance:test_ng.LoginTestNG@670002]" started-at="2026-03-29T00:26:04 ICT" name="testLogin" description="Kiểm tra tính năng đăng nhập với nhiều trạng thái tài khoản" data-provider="LoginData" finished-at="2026-03-29T00:26:05 ICT" duration-ms="856" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[nam_test]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[wrong_password]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Epic sadface: Username and password do not match any user in this service]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_ng.LoginTestNG@670002]" started-at="2026-03-29T00:26:05 ICT" name="tearDown" finished-at="2026-03-29T00:26:05 ICT" duration-ms="120" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- test_ng.LoginTestNG -->
+      </class> <!-- test_ng.tests.OrangeHRMTestNG -->
     </test> <!-- UI_Interactions_Test -->
   </suite> <!-- Automation_Testing_Suite -->
 </testng-results>

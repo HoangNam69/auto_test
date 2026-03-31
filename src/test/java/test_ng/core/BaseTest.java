@@ -1,4 +1,4 @@
-package test_ng.base;
+package test_ng.core;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

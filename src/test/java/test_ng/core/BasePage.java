@@ -1,4 +1,4 @@
-package test_ng.base;
+package test_ng.core;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -31,5 +31,14 @@ public abstract class BasePage {
     protected void clickElement(By locator) {
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
         element.click();
+    }
+
+    protected boolean isElementDisplayed(By locator) {
+        try {
+            WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+            return element.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
     }
 }
