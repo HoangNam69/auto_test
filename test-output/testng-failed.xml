@@ -3,13 +3,13 @@
 <suite name="Failed suite [Automation_Testing_Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="UI_Interactions_Test(failed)">
     <classes>
-      <class name="test_ng.HoverTestNG">
+      <class name="test_ng.tests.EmployeeE2ETestNG">
         <methods>
-          <include name="testHoverAction"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="testAddAndSearchEmployee"/>
         </methods>
-      </class> <!-- test_ng.HoverTestNG -->
+      </class> <!-- test_ng.tests.EmployeeE2ETestNG -->
     </classes>
   </test> <!-- UI_Interactions_Test(failed) -->
 </suite> <!-- Failed suite [Automation_Testing_Suite] -->

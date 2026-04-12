@@ -41,4 +41,10 @@ public abstract class BasePage {
             return false;
         }
     }
+
+    public String getInputValue(By locator) {
+        WebElement input = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+
+        return input.getAttribute("value");
+    }
 }

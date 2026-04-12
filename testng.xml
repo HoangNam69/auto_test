@@ -6,6 +6,7 @@
     <test name="UI_Interactions_Test">
         <classes>
             <class name="test_ng.tests.OrangeHRMTestNG"/>
+            <class name="test_ng.tests.EmployeeE2ETestNG"/>
         </classes>
     </test>
 
